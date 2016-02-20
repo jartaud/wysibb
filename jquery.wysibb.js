@@ -76,7 +76,7 @@ WBBLANG['en'] = CURLANG = {
 	sm8: "Pain",
 	sm9: "Sick"
 };
-wbbdebug=true;
+WBBDEBUG = false;
 (function($) {
 	'use strict';
 	$.wysibb = function(txtArea,settings) {
@@ -2795,7 +2795,7 @@ wbbdebug=true;
 	}
 	
 	$.log = function(msg) {
-		if (typeof(wbbdebug)!="undefined" && wbbdebug===true) {
+		if (typeof(WBBDEBUG)!="undefined" && WBBDEBUG===true) {
 			if (typeof(console)!="undefined") {
 				console.log(msg);
 			}else{
