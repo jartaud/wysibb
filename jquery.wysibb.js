@@ -84,6 +84,7 @@ WBBDEBUG = false;
 		
 		if (settings && settings.deflang && typeof(WBBLANG[settings.deflang])!="undefined") {CURLANG = WBBLANG[settings.deflang];}
 		if (settings && settings.lang && typeof(WBBLANG[settings.lang])!="undefined") {CURLANG = WBBLANG[settings.lang];}
+		if (settings && settings.debug) {WBBDEBUG = settings.debug;}
 		this.txtArea=txtArea;
 		this.$txtArea=$(txtArea);
 		var id = this.$txtArea.attr("id") || this.setUID(this.txtArea);
